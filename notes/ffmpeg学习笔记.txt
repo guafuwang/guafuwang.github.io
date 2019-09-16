@@ -1,0 +1,25 @@
+1、直播推流与拉流
+ 1.1、推流: ffmpeg -re -i 推流文件 -c copy -f flv rtmp://server/live/streamName 
+ 1.2、拉流: ffmpeg -i rtmp://server/live/streamName -c copy dup.flv
+ 
+ 2、录制屏幕
+  ffmpeg -f avfoundation -i 1 -r 30 out.yuv
+  
+  -f: 指定使用avfoundation采集数据
+  -i: 指定从哪里采集数据,它是一个文件索引号
+  -r: 指定帧率
+  1: 屏幕
+  
+ 3、录制声音
+  ffmpeg -f avfoundation -i :0 out.wav
+   
+   :0 后安装录制使用的音频设备
+   
+  4、查看avfoundation库支持设备
+   ffmpeg -f avfoundation -list_devices true -i ""
+   
+   
+   
+  
+  
+

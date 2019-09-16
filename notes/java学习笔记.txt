@@ -1,0 +1,47 @@
+siki学院+腾讯课堂
+学习所用系统: windows7 64 旗舰版
+
+201908042015--
+windows基本命令
+	dir :查看当前目录下的文件及文件夹
+	md :创建文件或文件夹
+	rd :删除文件或文件夹
+	cls :清空命令行
+	exit :退出
+	
+windows基本快捷键
+	ctrl+c :复制
+	ctrl+z :撤回
+	ctrl+v :粘贴
+	ctrl+y :反撤回
+	ctrl+x :剪切
+	ctrl+a :全选
+	tab :补全
+	window+d :返回桌面
+	
+环境变量: 
+	配置jdk编辑器:
+		window-->环境变量-->编辑系统环境变量(也可选择: 编辑账户的环境变量)-->环境变量-->在系统变量中新建一个变量名为JAVA-HOME,变量值为jdk安装路径-->在系统变量中找到Path变量双击进入编辑状态在变量值处输入 ;%JAVA-HOME%\jre\bin
+	classpath配置:
+		window-->环境变量-->编辑系统环境变量(也可选择: 编辑账户的环境变量)-->环境变量-->在系统变量中新建一个变量名为classpath,变量值为 .;自定义的编译环境空间(.为当前目录)
+	
+UltraEdit编辑器的使用
+	修改字体大小: 视图-->增大字号
+	取消自动备份: 高级-->设置-->文件处理-->备份-->不备份
+	
+第一个程序Hello World
+HelloWorld.java
+	class HelloWorld{
+		public static void main(){
+			System.out.println("Hello World");
+		}
+	}
+	
+编译:
+	在HelloWorld.java文件处打开dos命令窗口-->javac HelloWorld.java
+运行:
+	java HelloWorld
+	
+
+	
+	

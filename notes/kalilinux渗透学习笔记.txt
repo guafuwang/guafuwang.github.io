@@ -1,0 +1,110 @@
+讲课老师: mk
+-------------------------------------------------------------------------------------------
+centos系统下载地址:
+	http://mirrors.aliyun.com
+kali系统下载地址:
+	https://www.kali.org/
+
+漏洞提交:
+	漏洞盒子_项目大厅
+		https://www.vulbox.com/bounties
+	知道创宇_PoC 悬赏列表
+		https://www.seebug.org/vuldb/reward/poc
+	0bug_漏洞列表
+		http://www.0bug.org/bug
+	去中心化漏洞平台
+		https://dvpnet.io
+	安全客(QQ/微博/微信/360登录)
+		https://www.anquanke.com/
+	阿里云先知(限制为淘宝用户登录)
+		https://xianzhi.aliyun.com/productitem/index.htm#/home
+	腾讯安全应急响应中心(QQ/微信登录)
+		https://security.tencent.com/index.php/report/add
+	滴滴出行安全应急响应中心(微信登录)
+		http://sec.didichuxing.com/
+	欢聚时代安全应急响应中心(yy/手机号登录)
+		http://security.yy.com/
+	
+--------------------------------------------------------------------------------------------	
+centos命令:
+	yum install wget //安装 wget下载工具
+
+常用apt命令:
+	apt-cache search package 搜索包
+	apt-cache show package 获取包相关信息 如: 说明.大小.版本等
+	sudo apt-get install package 安装包
+	sudo apt-get remove package 删除包
+	sudo apt-get update 更新源
+	sudo apt-get upgrade 更新已安装的包
+	sudo apt-get dist-upgrade 升级系统
+主机网关绑定:
+	arp -s 网关ip 网关mac
+修改root用户名(未测试)
+	vi /etc/passwd
+	vi /etc/shadow
+	修改第一行第一个root为新用户名
+	重启系统，使修改生效
+查看后台程序运行:
+	ps -axu | grep 想看的程序
+查看一天内产生的文件:
+	find / -mtime -1
+--------------------------------------------------------------------------------------------
+中间人攻击_Ettercap:
+	安装服务器: 
+		rpm -ivh /mnt/Packages/vsftpd-2.2.2-6.el6_0.1.x86_64.rpm
+	启动服务器:
+		systemctl start vsftpd
+	创建用户: 
+		useradd 名称
+	初始化密码:
+		echo 密码 | passwd --stdin 名称
+	安装客户端:
+		rpm -ivh /mnt/Packages/ftp-0.17-67.el7.x86_64.rpm
+	清空防火墙:
+		iptables -F
+	
+	yum -y install httpd mariadb-server mariadb php php-mysql
+	参数: mariadb-serverzh这是mysql数据库的一个分子
+	systemctl start httpd
+	systemctl start mariadb
+	设置mysql数据库root用户的密码: 
+	mysqladmin -u root password "123456"
+	mysql -u root -p123456
+--------------------------------------------------------------------------------------------	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
