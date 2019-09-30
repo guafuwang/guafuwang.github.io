@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>登录页</title>
+		<meta charset="utf-8">
+		<!-- <link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css"> -->
+	</head>
+	<body>
+		账号: <input type="text" name="username" placeholder="账号/用户名" value="admin"><br>
+		密码: <input type="password" name="upassword" placeholder="密码" value="123456"><br>
+		<p onclick="_dl()" class="ss">登录</p><p onclick="_fh()" class="ss">返回</p>
+
+		<script>
+			function _dl(){
+				var a=document.getElementsByTagName("input")[0].value;
+				var b=document.getElementsByTagName("input")[1].value;
+				// console.log(a);
+				// console.log(b);
+				var str='[{"name": "admin","password": "123456"},{"name": "uname","password": "654321"}]';
+				var mxy=eval("("+str+")");
+				var aSF="F";
+				var bSF="F";
+				for(var i in mxy){
+					if(mxy[i].name==a){
+						aSF="S";
+						if(mxy[i].password==b){
+							bSF="S";
+						}
+					}
+				}
+				if(aSF=="S" && bSF=="S"){
+					alert("欢迎"+a+"回家");
+					window.location.href="http://wl.5211314.cf";
+				}else{
+					alert("账号或密码错误");
+				}
+				
+			}
+			function _fh(){ //返回 访问首页
+				window.location.href="http://www.wryxmq.gq";
+			}
+		</script>
+
+		<style>
+			body {
+				background-color: black; /*设置背景颜色*/
+			    color: blue !important; /*设置字体颜色*/
+			    font-family: Lobster,Monospace; /* 设置字体 */
+			}
+			body p {
+				display: inline-block;
+				margin-left: 35px;
+			}
+			.ss {
+				cursor: pointer;
+			}
+		
+		</style>
+	</body>
+</html>
