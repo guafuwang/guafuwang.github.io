@@ -1,0 +1,233 @@
+网页学习笔记.txt v1.0
+ 	
+设置字体:
+	font-family: Monospace;
+	引用google字体: 
+	<link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css">
+	h2 {
+		font-family: Lobster, Monospace; //将h2副标题设置成google字体
+	}
+	
+自动适配:	
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+	https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+	//当引用该文件后 直接在指定标签中添加 class="text-center" 即可实现居中
+	
+	//<button class="btn btn-block btn-primary">Like</button> 引用按钮样式 将元素转成块级元素 将颜色设置成深蓝色(浅蓝色 btn-info)
+	
+	//col-md-* *：数字 md适用于中等屏幕(笔记本电脑) col-xs-* xs适用于小屏幕(手机) 数字代表在一行中,各个元素应该占的列宽
+	//注意: Bootstrap 的12栏栅格布局
+	//上级须有class="row"
+	<div class="row">
+		<div class="col-xs-4"><button class="btn btn-block btn-primary">Like</button></div>
+		<div class="col-xs-4"><button class="btn btn-block btn-info">Info</button></div>
+		<div class="col-xs-4"><button class="btn btn-block btn-danger">Delete</button></div>
+	</div>
+	
+	//将文字与图片在一行显示
+	<div class="row">
+		<div class="col-xs-8">
+		  <h2 class="text-primary text-center">CatPhotoApp</h2>
+		</div>
+		<div class="col-xs-4">
+		  <a href="#">
+			<img class="img-responsive thick-green-border" src="/images/relaxing-cat.jpg">
+		  </a>
+    </div>
+	
+	//`Bootstrap` well: 为设定的列创造出一种视觉上的深度感
+	<div class="well"></div>
+	
+	//按钮属性 美化按钮
+	<button class="btn btn-default"></button>
+	
+引用Font Awesome图标库(矢量图.svg)
+	<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+	
+	<button>
+		<i class="fa fa-thumbs-up">Like</i> //该<i>标签原本为斜体标签 fa fa-thumbs-up: 点赞图标(大拇指) fa fa-trash: 删除图标(垃圾箱) fa fa-info-circle：信息图标(叹号)
+	</button>
+	
+	<form action=“提交url”> 
+		<input type="text" placeholder="cat photo URL" required class="form-control"> //form-control: 美化编辑框
+		<button type="submit" class="btn btn-primary">
+			<i class="fa fa-paper-plane">Submit</i> //fa fa-paper-plane: 提交按钮图标(飞机)
+		</button>
+	</form>	
+
+
+
+
+	
+	
+设置字体大小:
+	font-size: 16px;
+	
+设置字体颜色: 
+	color: red;
+	
+设置边框: 
+	border-width: 10px; //设置边框宽度
+    border-color: green; //设置边框颜色
+    border-style: solid; //设置边框样式 solid: 实线
+	border-radius: 10px; //边框半径(边框变成圆的,值越大越圆)
+	
+当图片丢失时：	
+	<a href="#"><img src="" alt="a"></a> //当图片丢失时,图片处就会显示alt里的内容
+	
+无序列表:
+	<ul>
+		<li></li>
+		<li></li>
+	</ul>
+	
+有序列表；
+	<ol>
+		<li></li>
+		<li></li>
+	</ol>
+	
+设置预设文本:
+	<input type="text" placeholder="cat photo Url"> //当输入框为空时显示文本
+	
+创建可提交表单:	
+	<form action="/submit-cat-photo"> //action: 指定提交的地址
+	  <input type="text" placeholder="cat photo URL" required> //required: 设置选项为必填项 注意：required属性在Safari浏览器中不起作用
+	  <input type="submit" /> //提交按钮
+	  <!-- <button type="submit">Submit</button> 功能同上 --> 
+	</form>
+	
+单选按钮:
+	<label>
+	  <input type="radio" name="indoor-outdoor" checked>男 //checked默认选项
+	</label>
+	<label>
+	   <input type="radio" name="indoor-outdoor">女
+	</label>
+	
+复选按钮:
+	<label>
+	  <input type="checkbox" name="personality" checked>1 //checked默认选项
+	</label>
+	<label>
+	  <input type="checkbox" name="personality" >2
+	</label>
+	<label>
+	  <input type="checkbox" name="personality" >3
+	</label>
+	
+占位符: 
+	<input type="text" placeholder="这是占位符">
+	
+设置背景颜色:
+		background-color: gray; //灰色背景
+
+有三个影响HTML元素布局的重要属性：padding(内边距)、margin(外边距)、border(边框)。
+上(top)右(right)下(bottom )左(left) 
+	
+多样式的优先级(!important > style > id > class):
+		<style>
+			.class1{
+				color: black !important;
+			}
+		</style>
+		<h1 class="class1 class2" id="id1" style="color: blue;">标题文本h1</h1>
+		
+js定时器：
+		//每隔1秒输出一次111
+		setInterval(function(){
+			console.log(111);
+		},1000)
+	
+js延时器:	
+		setTimeout(function(){
+			console(111);
+		},1000)
+		
+根据标签名获取标签：		
+ document.getElementsByTagName(""); //获取数据
+ document.createElement("") //创建数据
+ document.getElementsByTagName("").value; //获取内容
+ .innerHTML() //向标签中添加数据
+ .splie("") //以什么拆分字符串
+ .substring() //截取数据(2个参数,第一个为开始位置,0为起点 第二个为末尾位置[含头不含尾])
+ 
+ document.body.firstChild; //得到页面的第一个元素(以body为开始)
+ document.body.insertBefore(新数据,基准元素); //在"基准元素"前添加"新数据"
+
+js访问超链接：
+	window.location.href="https://www.wryxmq.gq"; //在同当前窗口中打开窗口
+	window.open("https://www.wryxmq.gq"); //在另外新建窗口中打开窗口
+
+块转行内元素: 
+	display: inline-block;
+	
+设置鼠标悬停样式:
+	cursor: pointer;
+
+创建行内元素: <span>我是行内元素</span>
+
+
+访问布局(index.html):
+	<frameset rows="15%,*" noresize="noresize" frameborder="0"> 
+	//rows: 上下分页(行) cols: 左右分页(列) noresize: 不可拖拽 frameborder: 1显示边框(默认) 0不显示边框(不显示边框将无法进行拖拽)
+	//注意：以上属性不支持h5
+		<frame src="1.html">
+		//longdesc(url): 规定一个包含有关框架内容的长描述的页面。
+		//marginheight(pixels): 规定框架的上方和下方的边距。
+		//marginwidth(pixels): 规定框架的左侧和右侧的边距。
+		//scrolling(yes/no/auto): 规定是否在框架中显示滚动条。
+		<frameset cols="20%,*">
+			<frame src="2.html">
+			<frame src="http://www.wryxmq.gq" name="q">
+		</frameset>
+	</frameset>
+
+列表设置(2.html):
+    <ul>
+        <li><a href="https://www.baidu.com/" target="q">百度</a></li>
+        <li><a href="https://www.wryxmq.gq" target="q">淘宝</a></li>
+    </ul>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

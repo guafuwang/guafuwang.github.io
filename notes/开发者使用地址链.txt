@@ -1,0 +1,58 @@
+chrome 网上应用店：
+	https://chrome.google.com/webstore/category/extensions?h1=zh
+google play:	
+	https://play.google.com	
+	
+离线crx下载:
+	https://crxdl.com/
+MDN web docs:	
+	https://developer.mozilla.org/zh-CN/
+
+知识共享:	
+	https://creativecommons.org
+内存·溢出:
+	http://outofmemory.cn
+	
+crx文件路径:	
+C:\Users\用户名\AppData\Local\Google\Chrome\User Data\Default\Extensions	
+	
+	
+插件网(需要关注微信公众号):
+	http://www.cnplugins.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
