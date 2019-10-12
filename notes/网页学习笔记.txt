@@ -55,9 +55,18 @@
 		</button>
 	</form>	
 
+jquery cdn共享库:
+	http://code.jquery.com/jquery-latest.js
+	
 
-
-
+jquery使用: 
+	class="animated bounce" //回弹效果
+	jquery添加方法:
+		$(document).ready(function() { //事件监听(自定义,无内容时会报错)
+			$("button").addClass("animated bounce"); 
+		});
+	
+	
 	
 	
 设置字体大小:
