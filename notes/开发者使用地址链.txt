@@ -15,6 +15,12 @@ MDN web docs:
 	
 crx文件路径:	
 C:\Users\用户名\AppData\Local\Google\Chrome\User Data\Default\Extensions	
+
+cdn共享库: 
+	https://cdnjs.net/ (.js)
+	https://www.bootcdn.cn/ (.css)
+
+
 	
 	
 插件网(需要关注微信公众号):
