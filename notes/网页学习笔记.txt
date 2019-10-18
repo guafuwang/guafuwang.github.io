@@ -64,6 +64,22 @@ jquery使用:
 	jquery添加方法:
 		$(document).ready(function() { //事件监听(自定义,无内容时会报错)
 			$("button").addClass("animated bounce"); 
+			//fadeOut: 隐藏不显示 animated shake: 抖动
+			//removeClass() 移出class
+			
+			$("#target1").css("color","red"); //css: 改变css样式 
+			
+			$("button").prop("disabled", true); //.prop() 方法调整元素的属性
+			
+			$("#target4").appendTo("#right-well"); //.appendTo()可以把选中的元素加到其他元素中
+			
+			$("#target5").clone().appendTo("#left-well"); //clone() 拷贝元素 
+			
+			$("#target1").parent().css("background-color", "red"); //parent()继承父级所有属性 children() 子元素
+			
+			$(".target:nth-child(2)").addClass("animated bounce"); //:nth-child() 按照索引顺序(从1开始)选择目标元素的所有子元素 :odd 偶数选择 索引是从0开始
+			
+			
 		});
 	
 	
