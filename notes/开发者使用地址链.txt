@@ -2,6 +2,10 @@ chrome 网上应用店：
 	https://chrome.google.com/webstore/category/extensions?h1=zh
 google play:	
 	https://play.google.com	
+chrome&插件：
+	http://chromecj.com/
+
+	
 	
 离线crx下载:
 	https://crxdl.com/
@@ -25,12 +29,19 @@ cdn共享库:
 	
 插件网(需要关注微信公众号):
 	http://www.cnplugins.com/
+扩展迷:
+	https://www.extfans.com/
 
 
 
 
 
-
+油管:
+	https://www.youtube.com
+kakarot:
+	https://kakarot.net
+BitDownloader:
+	https://bitdownloader.com/youtube-video-downloader
 
 
 
