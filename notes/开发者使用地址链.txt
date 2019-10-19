@@ -42,10 +42,10 @@ kakarot:
 	https://kakarot.net
 BitDownloader:
 	https://bitdownloader.com/youtube-video-downloader
-
-
-
-
+在线教程库:
+	https://www.tutorialspoint.com/index.htm
+免费虚拟主机：	
+	https://infinityfree.net/
 
 
 
