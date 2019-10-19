@@ -41,6 +41,10 @@
 	//按钮属性 美化按钮
 	<button class="btn btn-default"></button>
 	
+	//显示边框
+	<div class="thumbnail">wryxmq</div>
+	
+	
 引用Font Awesome图标库(矢量图.svg)
 	<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
 	
@@ -56,6 +60,7 @@
 	</form>	
 
 jquery cdn共享库:
+	
 	http://code.jquery.com/jquery-latest.js
 	
 
@@ -214,8 +219,20 @@ js访问超链接：
         <li><a href="https://www.wryxmq.gq" target="q">淘宝</a></li>
     </ul>
 
-	
+注释小字体：
+	<cite></cite>
 
+var声明:
+	当未指定值时: undefined(默认)
+	
+data types(数据类型)-js：
+	undefined（未定义）, 
+	null（空）, 
+	boolean（布尔型）, 
+	string（字符串）, 
+	symbol(符号), 
+	number（数字）, 
+	object（对象）
 
 
 
